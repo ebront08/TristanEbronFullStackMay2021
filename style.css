@@ -1,0 +1,132 @@
+/* --> "all elements" (a universal selector) : to make the website look the same in all browsers. */
+* {
+    box-sizing: border-box;
+    /* this padding element can be commented out */
+    padding: 0;
+    margin: 0;
+    /* brought up 2 common attributes set for most elements across the page */
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+
+    }
+
+/* isolated id to change the color of seo in 'Horiseon' h1 header */
+#seo {
+    color: #d9dcd6;
+}
+
+/* Element Selectors */
+body {
+    background-color: #d9dcd6;
+}
+/* this can be written as header {} or as specifically as body header {} */
+body header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+}
+/* this can be written as h1 directly as usually there's only 1 h1 , however incase down the road h1 is reused for another section the formating for this section will be specifically applied only to body header h1 element */
+body header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+/* formatting for navigation elements up top right */
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+/* ensuring the nav links are listed out format wise but rather appear inline */
+body header nav ul {
+    list-style-type: none;
+}
+body header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* ensuring there's no underline denoting a link for the nav link text displayed up top */
+body header nav ul li a {
+    text-decoration: none;
+}
+/* sets all paragragh element content to be size 16 */
+p {
+    font-size: 16px;
+}
+
+/* Class Selectors */
+/* main body background image up top */
+.background-image {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* bottom left article block's text formatting */
+.left-content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* bottom left section's image's loction formatting */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+.nav-menu img {
+    max-height: 200px;
+}
+
+.nav-menu {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+}
+.nav-menu h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* bottom right section panel formatting */
+.right-content {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #2589bd;
+}
+/* bottom right section image + content formatting */
+.right-menu {
+    margin-bottom: 32px;
+}
+.right-menu h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*  this is just another way of defining how to format */
+aside section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* the hidden footer section */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display:none
+}
+footer h2 {
+    font-size: 20px;
+}
